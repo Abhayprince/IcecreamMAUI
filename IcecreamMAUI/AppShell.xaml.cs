@@ -30,4 +30,14 @@ public partial class AppShell : Shell
             Routing.RegisterRoute(pageType.Name, pageType);
         }       
     }
+
+    private async void FlyoutFooter_Tapped(object sender, TappedEventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/@abhayprince");
+    }
+
+    private async void SignoutMenuItem_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.DisplayAlert("Alert", "Signout menu item clicked", "Ok");
+    }
 }
