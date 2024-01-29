@@ -4,10 +4,11 @@
              x:Class="IcecreamMAUI.Pages.SigninPage"
              Title="Signin"
              Shell.FlyoutBehavior="Disabled">
-    <VerticalStackLayout>
+    <VerticalStackLayout VerticalOptions="Center">
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Button Text="Go to App" Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
